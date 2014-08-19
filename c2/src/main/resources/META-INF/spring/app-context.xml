@@ -5,9 +5,8 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
 	<description>Example configuration to get you started.</description>
-
-	<bean id="MessageProvider" class="com.apress.prospring3.ch2.EnglishStringMessageProvider"></bean>
-	<bean id="render" class="com.apress.prospring3.ch2.StandardOutputRender">
+	<bean id="render" class="com.apress.prospring3.ch2.Log4jOutputRender">
 		<property name="provider" ref="MessageProvider" />
 	</bean>
+	<bean id="MessageProvider" class="com.apress.prospring3.ch2.EnglishStringMessageProvider"></bean>
 </beans>

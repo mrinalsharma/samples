@@ -10,6 +10,7 @@ public class HelloWorldSpringDI {
 				"META-INF/spring/app-context.xml");
 		MessageRender mr = context
 				.getBean("render", MessageRender.class);
+		
 		mr.render();
 	}
 
